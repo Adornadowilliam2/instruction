@@ -3,10 +3,6 @@
     margin: 0;
 }
 
-/* body{
-   
-} */
-
 .bg{
     display: flex;
     justify-content: center;
@@ -52,24 +48,7 @@ nav img{
     padding: 10px;
     font-size: 20px;
 }
-/* .bg h1{
-    text-align: center;
-    font-size: 5pc;
-    color: white;
-    animation: neon 1s ease-in-out infinite alternate;
-} */
 
- @keyframes neon {
-    0% {
-        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
-    50% {
-        box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
-    100%{
-        box-shadow: 0 0 20px #fff, 0 0 30px #ce3b17, 0 0 40px #ce3b17, 0 0 50px #ce3b17, 0 0 60px #ce3b17, 0 0 70px #ce3b17, 0 0 80px #ce3b17;
-    }
-} 
 
 .grid{
     display: grid;
@@ -119,3 +98,15 @@ a button{
 a{
     text-decoration: none;
 }
+
+@keyframes neon {
+    0% {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    50% {
+        box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+    100%{
+        box-shadow: 0 0 20px #fff, 0 0 30px #ce3b17, 0 0 40px #ce3b17, 0 0 50px #ce3b17, 0 0 60px #ce3b17, 0 0 70px #ce3b17, 0 0 80px #ce3b17;
+    }
+} 
