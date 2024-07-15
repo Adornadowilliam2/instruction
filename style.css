@@ -1,112 +1,91 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.bg{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url(mashle.gif);
-    background-position: fixed;
-    background-size: cover;
+body {
+  background-color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-nav{
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    box-shadow: 0 0 10px black;
-    top: 0;
-    left: 0;
-    right: 0;
+.logo {
+  width: 50px;
+  height: 50px;
+  background-image: url(mashle.jpg);
+  background-size: cover;
+  border-radius: 50px;
+  border: 1px solid black;
+  margin: 10px;
 }
 
-nav img{
-    border-radius: 50%;
-    border: 4px solid black;
-    margin: 4px;
+nav {
+  box-shadow: 2px 2px 4px black;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5vh;
+  height: 10vh;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
+.logo-container {
+  display: flex;
+  align-items: center;
 }
 
-
-.nav-links a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
 }
 
-.nav-links{
-    padding: 10px;
-    font-size: 20px;
+ul li {
+  color: black;
+  display: inline-block;
+  list-style-type: none;
+  margin: 10px;
 }
 
-
-.grid{
-    display: grid;
-    grid-template-areas: "download download video";
+ul li:hover {
+  cursor: pointer;
 }
 
-.video{
-    grid-area: video;
-    /* border: 1px solid red; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-    background-color: black;
-
-}
-.video video{
-    animation: neon 1s ease-in-out infinite alternate;
+main {
+  display: block;
+  margin: auto;
 }
 
-.download{
-    grid-area: download;
-    font-family: "UnifrakturMaguntia", cursive;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-    background-color: yellow;
+.content {
+  height: 80vh;
+  background-image: url(mashle.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: 100%;
 }
 
-.download span{
-    border: 1px black solid;
-    padding: 20px;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    background-color: lightslategray;
+@media screen and (max-width: 767px) {
+  .content {
+    background-size: contain;
+  }
 }
 
-a button{
-    margin: 5px auto;
-    display: block;
-   
+.download-title {
+  text-align: center;
+  padding-bottom: 15px;
 }
 
-a{
-    text-decoration: none;
+.logo-title {
+  font-size: 20px;
+  font-weight: bold;
 }
 
-@keyframes neon {
-    0% {
-        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
-    50% {
-        box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
-    100%{
-        box-shadow: 0 0 20px #fff, 0 0 30px #ce3b17, 0 0 40px #ce3b17, 0 0 50px #ce3b17, 0 0 60px #ce3b17, 0 0 70px #ce3b17, 0 0 80px #ce3b17;
-    }
-} 
+.card {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.card:hover {
+  background-color: rgb(204, 200, 200);
+  transition: all background-color ease-in 2s;
+}

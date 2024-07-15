@@ -1,39 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Pdf</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="mashle.jpg" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="grid">
-        <nav>
-            <div class="logo">
-                <img src="mashle.jpg" alt="logo" width="100px">
-                <span>William</span>
-            </div>
-            <div class="nav-links">
-                <a href="index.html">Home</a> |
-                <a href="download.html">Downloads</a> |
-                <a href="more.html">More</a>
-            </div>
-        </nav>
-        <div class="download">
-            <span>
-                <h2>Python Cheat Sheet</h2>
-            <a href="python-cheat-sheet.pdf" download=""><button>Download Python</button></a>
-            </span>
-            <span>
-                <h2>Javascript Cheat Sheet</h2>
-            <a href="js-cheatsheet.pdf" download=""><button>Download Javascript</button></a>
-            </span>
-        </div>
-        <div class="video">
-            <video src="mashle.mp4"controls width="400px"></video>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download Mashle</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="mashle.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo-container">
+        <div class="logo"></div>
+        <span class="logo-title">Mashle</span>
+      </div>
+      <ul>
+        <a href="index.html"><li>Home</li></a>
+        <a href="download.html"><li>Download</li></a>
+      </ul>
+    </nav>
+    <h1 class="download-title">Javascript and Python Cheat Sheet</h1>
+    <hr />
+    <div class="card">
+      <h2>Python Download</h2>
+      <a href="python-cheat-sheet.pdf" download>Python Link</a>
     </div>
-</body>
+    <div class="card">
+      <h2>Javascript Download</h2>
+      <a href="js-cheatsheet.pdf" download>Javascript Link</a>
+    </div>
+  </body>
 </html>
