@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/mashle.jpg);
+  background-size: cover;
+  border-radius: 50px;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+nav {
+  box-shadow: 2px 2px 4px black;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5vh;
+  height: auto;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  color: black;
+  display: inline-block;
+  list-style-type: none;
+  margin: 10px;
+}
+
+ul li:hover {
+  cursor: pointer;
+}
+
+main {
+  display: block;
+  margin: auto;
+}
+
+.content {
+  height: 80vh;
+  background-image: url(../images/mashle.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100%;
+  width: 60%;
+  margin-inline: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    background-size: contain;
+  }
+}
+.download-title {
+  text-align: center;
+  padding-bottom: 15px;
+}
+.logo-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.card {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.card:hover {
+  background-color: rgb(207, 207, 207);
+  transition: all background-color ease-in 2s;
+  cursor: pointer;
+}
