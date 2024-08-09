@@ -36,6 +36,6 @@ function pressed() {
     "start:dev": "concurrently \"vite\" \"electron .\"",
     "package": "electron-builder"</mark></p> 
     <h2>Now you can enjoy your website simple "npm run start:dev"</h2> 
-    <a href='./container/notes.txt' ><button>The Script js code</button></a>
+    <a href='script.js' ><button>The Script js code</button></a>
   `;
 }
