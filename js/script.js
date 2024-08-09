@@ -24,7 +24,9 @@ function pressed() {
     <p><mark>${main}</mark></p> 
     <h2>8.) Then also create preload.js : </h2>
     <p><mark>${preload}</mark></p> 
-    <h2>9.)  Finally is to add this to package.json: </h2>
+    <h2>8.) Then add this command : </h2>
+    <p><mark>${arr[0]}</mark></p>
+    <h2>10.)  Finally is to add this to package.json: </h2>
     <h3>This one must be below in the "type": module : </h2>
     <p><mark> "main": "electron/main.js"</mark></p>  
     <br>
@@ -32,6 +34,7 @@ function pressed() {
     <p><mark>"dev": "concurrently \"vite\" \"electron .\"",
     "start": "electron .",
     "start:dev": "concurrently \"vite\" \"electron .\"",
-    "package": "electron-builder"</mark></p>  
+    "package": "electron-builder"</mark></p> 
+    <h2>Now you can enjoy your website simple "npm run start:dev"</h2> 
   `;
 }
