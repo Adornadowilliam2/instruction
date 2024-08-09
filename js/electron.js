@@ -31,9 +31,6 @@ app.on("window-all-closed", () => {
     app.quit();
   }
 });
-
-<hr>
-<button onclick='pressed2()'>Go to preload</button>
 `;
 
 const preload = `
@@ -43,11 +40,6 @@ window.addEventListener("DOMContentLoaded", () => {
       version: process.versions.electron,
     };
   });
-
-<hr>
-<a href='download.html'>  <button>Go to downloads</button></a>
-<button onclick='pressed()'>Go to back</button>
-<button onclick='pressed3()'>Summary</button>
   `;
 
 const arr = [
