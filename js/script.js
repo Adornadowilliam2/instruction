@@ -31,12 +31,10 @@ function pressed() {
     <p><mark> "main": "electron/main.js"</mark></p>  
     <br>
     <h3>This one must be inside the scripts : {} </h2>
-    <p><mark>"dev": "concurrently \"vite\" \"electron .\"",
+    <p><mark>"dev": "concurrently \\"vite\\" \\"electron .\\"",
     "start": "electron .",
-    "start:dev": "concurrently \"vite\" \"electron .\"",
+    "start:dev": "concurrently \\"vite\\" \\"electron .\\"",
     "package": "electron-builder"</mark></p> 
-    <h2>Now you can enjoy your website simple "npm run start:dev"</h2> 
-    <a href='./container/notes.txt' ><button>The Script js code</button></a>
   `;
 }
 const sakila = document.getElementById("sakila");
