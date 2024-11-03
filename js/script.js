@@ -39,3 +39,7 @@ function pressed() {
     <a href='./container/notes.txt' ><button>The Script js code</button></a>
   `;
 }
+const sakila = document.getElementById("sakila");
+sakila.addEventListener("click", function () {
+  sakila.innerHTML = `<p> mysql -u root -p sakila < "C:\\Users\\name\\Downloads\\sakila-db\\sakila-db\\sakila-schema.sql"</p>  <br><br><p>mysql -u root -p sakila < "C:\\Users\\name\\Downloads\\sakila-db\\sakila-db\\sakila-data.sql"</p>`;
+});
